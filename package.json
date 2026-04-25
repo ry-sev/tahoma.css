@@ -1,0 +1,32 @@
+{
+  "name": "tahoma.css",
+  "version": "1.0.0",
+  "description": "A 2000s Corporate Web Design System",
+  "keywords": [
+    "css"
+  ],
+  "homepage": "https://github.com/ry-sev/tahoma.css#readme",
+  "bugs": {
+    "url": "https://github.com/ry-sev/tahoma.css/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ricky Severino",
+    "url": "https://severino.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ry-sev/tahoma.css.git"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint .",
+    "lint:fix": "oxlint --fix .",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt ."
+  },
+  "devDependencies": {
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0"
+  }
+}

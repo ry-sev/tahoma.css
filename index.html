@@ -1,0 +1,1834 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tahoma.css | A 2000s Corporate Web Design System</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+     BANNER
+     ============================================================ -->
+    <div class="banner">
+      <div class="logo">T</div>
+      <div class="title-area">
+        <div class="t1">tahoma.css</div>
+        <div class="t2">
+          A 2000s Corporate Web Design System &nbsp;|&nbsp; v1.0.0 Release &nbsp;|&nbsp; "Best
+          viewed in Internet Explorer 6.0+"
+        </div>
+      </div>
+      <div class="banner-search">
+        <input type="text" placeholder="Search components, tokens, utilities..." />
+        <button class="go">Go ▸</button>
+      </div>
+      <div class="user-area">
+        Welcome back, <span class="u1">J. Developer</span><br />
+        <a>My Profile</a> &nbsp;|&nbsp; <a>Help</a> &nbsp;|&nbsp; <a>Sign Out</a>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     SUBNAV — tabs
+     ============================================================ -->
+    <div class="subnav">
+      <span class="tab active">Overview</span>
+      <span class="tab">Components</span>
+      <span class="tab">Tokens</span>
+      <span class="tab">Utilities</span>
+      <span class="tab">Changelog</span>
+      <span class="tab">Download .css</span>
+    </div>
+
+    <!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+    <div class="breadcrumb">
+      <span class="breadcrumb-right"
+        >Friday, April 24, 2026 &nbsp;|&nbsp; 10:42 AM &nbsp;|&nbsp; Session: 00:06:17</span
+      >
+      <span>Home</span><span class="sep">/</span><span>Design System</span><span class="sep">/</span
+      ><span class="current">Showcase</span>
+    </div>
+
+    <!-- ============================================================
+     WELCOME
+     ============================================================ -->
+    <div class="welcome-banner">
+      <div class="w-icon">💾</div>
+      <div class="w-text">
+        <h2>Welcome to tahoma.css!</h2>
+        <div class="sub">
+          A comprehensive drop-in stylesheet that makes your page look like it shipped from a
+          cube-farm web team in 2003. Banners, web parts, zebra tables, beveled buttons, and an
+          unreasonable amount of <b>Tahoma 11px</b>.
+        </div>
+      </div>
+      <div class="w-right">
+        Components: <b>60+</b> &nbsp;🎛<br />
+        Tokens: <b>42 colors, 9 sizes</b><br />
+        Filesize: <b>~60 KB raw</b>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     LAYOUT
+     ============================================================ -->
+    <div class="wrap">
+      <div class="layout">
+        <!-- =========================================================
+       LEFT COLUMN — navigation
+       ========================================================= -->
+        <div class="left-col">
+          <details class="webpart" open>
+            <summary class="webpart-header">
+              <span>📁 On this page</span>
+            </summary>
+            <div class="webpart-body flush">
+              <ul class="nav-list">
+                <li class="section">Getting Started</li>
+                <li><a class="current" href="#overview">Overview</a></li>
+                <li><a href="#colors">Color tokens</a></li>
+                <li><a href="#typography">Typography</a></li>
+
+                <li class="section">Page Chrome</li>
+                <li><a href="#banner">Banner</a></li>
+                <li><a href="#subnav">Subnav &amp; tabs</a></li>
+                <li><a href="#breadcrumb">Breadcrumb</a></li>
+                <li><a href="#welcome">Welcome banner</a></li>
+                <li><a href="#footer">Footer</a></li>
+
+                <li class="section">Layout</li>
+                <li><a href="#webparts">Web parts</a></li>
+                <li><a href="#sections">Section heads</a></li>
+
+                <li class="section">Content</li>
+                <li><a href="#announce">Announcements</a></li>
+                <li><a href="#callouts">Callouts</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#editor">Editor blocks</a></li>
+
+                <li class="section">Controls</li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tags">Tags &amp; chips</a></li>
+
+                <li class="section">Data</li>
+                <li><a href="#stats">Stat grid</a></li>
+                <li><a href="#shelf">Shelf cards</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#bars">Usage bars</a></li>
+
+                <li class="section">Search &amp; Navigation</li>
+                <li><a href="#search">Search bar &amp; facets</a></li>
+                <li><a href="#pagination">Pagination</a></li>
+
+                <li class="section">Chrome Extras</li>
+                <li><a href="#dialog">Dialog</a></li>
+                <li><a href="#tooltip">Tooltips</a></li>
+
+                <li class="section">Reference</li>
+                <li><a href="#utility">Utility classes</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <div class="webpart wp-gold">
+            <div class="webpart-header"><span>💡 Quick Start</span></div>
+            <div class="webpart-body">
+              <p class="mb-1">Add one line to your <code>&lt;head&gt;</code>:</p>
+              <pre style="margin: 4px 0; font-size: 10px">
+&lt;link rel="stylesheet"
+  href="style.css"/&gt;</pre
+              >
+              <p class="fs-sm txt-muted">
+                Plain HTML is styled automatically. Reach for the class helpers when you need a
+                specific component.
+              </p>
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>🏷 Popular tags</span></div>
+            <div class="webpart-body" style="line-height: 1.9">
+              <a style="font-size: 13px; font-weight: bold">webparts</a> (18)
+              <a style="font-size: 12px">buttons</a> (9) <a style="font-size: 11px">tables</a> (6)
+              <a style="font-size: 14px; font-weight: bold">corporate</a> (∞)
+              <a style="font-size: 10px">gradients</a> (140+)
+              <a style="font-size: 11px">nostalgia</a> (100%)
+              <a style="font-size: 10px">bevels</a> (72)
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+       MAIN COLUMN
+       ========================================================= -->
+        <div class="main-col">
+          <!-- ===================================================== -->
+          <!--   OVERVIEW                                             -->
+          <!-- ===================================================== -->
+          <div class="webpart wp-orange full" id="overview">
+            <div class="webpart-header">
+              <span>📢 About this stylesheet</span>
+              <span class="actions">[<a>Manage</a>]</span>
+            </div>
+            <div class="webpart-body">
+              <div class="announce">
+                <div class="kicker">★ Design goals</div>
+                Capture the look of early-2000s corporate web UI — the SharePoint task panes,
+                Outlook Today dashboards, beveled Windows XP chrome, and Tahoma-heavy intranet
+                portals. Styled base elements let plain HTML work out of the box; semantic classes
+                let you compose richer components.
+              </div>
+              <div class="announce blue">
+                <div class="kicker">ℹ How to use</div>
+                Each section below shows a component, the class name, and where to reach for it.
+                Copy the markup patterns directly — the CSS file is unminified and commented so you
+                can grep for <code>/* 13. Buttons */</code>-style section headers.
+              </div>
+              <div class="announce green">
+                <div class="kicker">✓ Accessibility notes</div>
+                Focus outlines are preserved on links (dotted navy). Custom checkboxes use
+                <code>accent-color</code>. Respect <code>aria-current="page"</code> for tabs and nav
+                items. Colour is never the only signal.
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   STAT GRID                                            -->
+          <!-- ===================================================== -->
+          <div class="full" id="stats">
+            <div class="section-heading">
+              Stat grid &nbsp;·&nbsp; <code>.stat-grid</code> / <code>.stat-cell</code>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-cell">
+                <div class="n">60+</div>
+                <div class="l">Components</div>
+                <div class="d">+8 this release</div>
+              </div>
+              <div class="stat-cell">
+                <div class="n">42</div>
+                <div class="l">Color Tokens</div>
+                <div class="d">semantic + neutral</div>
+              </div>
+              <div class="stat-cell">
+                <div class="n">58.9 KB</div>
+                <div class="l">Uncompressed</div>
+                <div class="d gray">~6 KB gzipped</div>
+              </div>
+              <div class="stat-cell">
+                <div class="n">0</div>
+                <div class="l">JS Required</div>
+                <div class="d red">pure CSS</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   COLOR TOKENS                                         -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="colors">
+            <div class="webpart-header">
+              <span>🎨 Color tokens</span>
+              <span class="actions">[<a>Copy all</a>]</span>
+            </div>
+            <div class="webpart-body">
+              <p class="fs-sm txt-muted mb-2">
+                CSS custom properties, grouped by semantic role. Override any on
+                <code>:root</code> to retheme.
+              </p>
+
+              <h6 class="mt-2">Neutrals</h6>
+              <div class="grid-4">
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-desktop);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-desktop</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-panel-tan);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-panel-tan</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-panel-cream);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-panel-cream</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-paper);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-paper</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-paper-alt);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-paper-alt</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-paper-sunk);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-paper-sunk</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-border-soft);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-border-soft</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-border-hard);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-border-hard</code></small>
+                </div>
+              </div>
+
+              <h6 class="mt-3">Navy — the enterprise colour</h6>
+              <div class="grid-4">
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy)"></div>
+                  <small><code>--bp-navy</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-hi)"></div>
+                  <small><code>--bp-navy-hi</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-lo)"></div>
+                  <small><code>--bp-navy-lo</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-deep)"></div>
+                  <small><code>--bp-navy-deep</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-ink)"></div>
+                  <small><code>--bp-navy-ink</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-soft)"></div>
+                  <small><code>--bp-navy-soft</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-softer)"></div>
+                  <small><code>--bp-navy-softer</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-navy-wash)"></div>
+                  <small><code>--bp-navy-wash</code></small>
+                </div>
+              </div>
+
+              <h6 class="mt-3">Gold — accent &amp; CTA</h6>
+              <div class="grid-4">
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-hi)"></div>
+                  <small><code>--bp-gold-hi</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-lo)"></div>
+                  <small><code>--bp-gold-lo</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-pale)"></div>
+                  <small><code>--bp-gold-pale</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-warm)"></div>
+                  <small><code>--bp-gold-warm</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-edge)"></div>
+                  <small><code>--bp-gold-edge</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-gold-ink)"></div>
+                  <small><code>--bp-gold-ink</code></small>
+                </div>
+              </div>
+
+              <h6 class="mt-3">Green · Red · Yellow — semantic</h6>
+              <div class="grid-4">
+                <div>
+                  <div style="height: 32px; background: var(--bp-green-pale)"></div>
+                  <small><code>--bp-green-pale</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-green-hi)"></div>
+                  <small><code>--bp-green-hi</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-green-lo)"></div>
+                  <small><code>--bp-green-lo</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-green-ink)"></div>
+                  <small><code>--bp-green-ink</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-red-pale)"></div>
+                  <small><code>--bp-red-pale</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-red-hi)"></div>
+                  <small><code>--bp-red-hi</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-red-lo)"></div>
+                  <small><code>--bp-red-lo</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-red-ink)"></div>
+                  <small><code>--bp-red-ink</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-yell-pale);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-yell-pale</code></small>
+                </div>
+                <div>
+                  <div
+                    style="
+                      height: 32px;
+                      background: var(--bp-yell-hot);
+                      border: 1px solid var(--bp-border);
+                    "
+                  ></div>
+                  <small><code>--bp-yell-hot</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-yell-edge)"></div>
+                  <small><code>--bp-yell-edge</code></small>
+                </div>
+                <div>
+                  <div style="height: 32px; background: var(--bp-red-dot)"></div>
+                  <small><code>--bp-red-dot</code></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   TYPOGRAPHY                                           -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="typography">
+            <div class="webpart-header">
+              <span>🔠 Typography</span>
+              <span class="actions">[<a>Type scale</a>]</span>
+            </div>
+            <div class="webpart-body">
+              <h1>Heading 1 &nbsp;<small class="txt-faint">h1 · 22px · Trebuchet MS</small></h1>
+              <h2>Heading 2 &nbsp;<small class="txt-faint">h2 · 18px</small></h2>
+              <h3>Heading 3 &nbsp;<small class="txt-faint">h3 · 16px</small></h3>
+              <h4>Heading 4 &nbsp;<small class="txt-faint">h4 · 14px</small></h4>
+              <h5>Heading 5 &nbsp;<small class="txt-faint">h5 · uppercase label</small></h5>
+              <h6>Heading 6 &nbsp;<small class="txt-faint">h6 · small caps micro-label</small></h6>
+
+              <p>
+                Body copy sits at <b>11px Tahoma</b>, with Verdana as a fallback. Links like
+                <a href="#">this one</a> are classic corporate <code>#0033cc</code>, visited links
+                turn <span style="color: #551a8b">purple</span>, and hovered links flash
+                <span style="color: #ff0000">red</span>. Inline elements: <b>bold</b>,
+                <i>italic</i>, <code>code</code>, <kbd>Ctrl</kbd>+<kbd>S</kbd>, and
+                <span data-tip="a CSS-only hover popup">tooltip-on-hover</span>.
+              </p>
+
+              <p>
+                The <span class="num" style="font-size: 22px">1,346</span> serif number style — use
+                <code>.num</code> for big decorative digits in dashboards.
+              </p>
+
+              <h5>Blockquote</h5>
+              <blockquote>
+                "We write to taste life twice, in the moment and in retrospect."
+                <cite>— Anaïs Nin</cite>
+              </blockquote>
+
+              <h5>Preformatted &amp; code</h5>
+              <pre>
+function render(portlet) {
+  return portlet.header + portlet.body;
+}</pre
+              >
+
+              <hr />
+
+              <h5>Type scale tokens</h5>
+              <table class="prop-table" style="max-width: 400px">
+                <tr>
+                  <td>--bp-fs-xs</td>
+                  <td>9px · micro-labels</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-sm</td>
+                  <td>10px · meta / captions</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-base</td>
+                  <td>11px · body</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-md</td>
+                  <td>12px · emphasised body</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-lg</td>
+                  <td>14px · subheads</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-xl</td>
+                  <td>16px · page titles</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-2xl</td>
+                  <td>18px · banner title</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-3xl</td>
+                  <td>22px · display</td>
+                </tr>
+                <tr>
+                  <td>--bp-fs-giant</td>
+                  <td>36px · hero number</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   WEB PARTS                                            -->
+          <!-- ===================================================== -->
+          <div class="full" id="webparts">
+            <div class="section-heading">
+              Web parts &nbsp;·&nbsp; <code>.webpart</code> with colour variants
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header">
+              <span>Default (navy header)</span><span class="actions">[<a>Edit</a>]</span>
+            </div>
+            <div class="webpart-body">
+              The workhorse panel. Navy-blue header, white body, thin grey shadow —
+              <code>.webpart</code>.
+            </div>
+          </div>
+
+          <div class="webpart wp-orange">
+            <div class="webpart-header"><span>Orange — announcements</span></div>
+            <div class="webpart-body">
+              Add <code>.wp-orange</code> for a warm amber header. Used for tips, news, welcome
+              blocks.
+            </div>
+          </div>
+
+          <div class="webpart wp-green">
+            <div class="webpart-header"><span>Green — success / tasks</span></div>
+            <div class="webpart-body">
+              Add <code>.wp-green</code> for confirmation panels, completed checklists.
+            </div>
+          </div>
+
+          <div class="webpart wp-red">
+            <div class="webpart-header"><span>Red — warnings</span></div>
+            <div class="webpart-body">
+              Add <code>.wp-red</code> for open-questions, deadlines, critical alerts.
+            </div>
+          </div>
+
+          <div class="webpart wp-gold">
+            <div class="webpart-header"><span>Gold — highlights</span></div>
+            <div class="webpart-body">
+              Use <code>.wp-gold</code> sparingly for featured/hero sidebars.
+            </div>
+          </div>
+
+          <div class="webpart wp-plum">
+            <div class="webpart-header"><span>Plum — miscellaneous</span></div>
+            <div class="webpart-body">
+              An off-menu purple variant for sections that don't fit the others.
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   ANNOUNCEMENTS & CALLOUTS                             -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="announce">
+            <div class="webpart-header">
+              <span>📣 Announcements — <code>.announce</code></span>
+            </div>
+            <div class="webpart-body">
+              <div class="announce">
+                <div class="kicker">✦ Default — yellow</div>
+                The default announce is a warm cream block with amber kicker text. Use for
+                low-urgency callouts.
+              </div>
+              <div class="announce red">
+                <div class="kicker">⚠ Red — urgent</div>
+                <b>Database quota at 94%.</b> Consider archiving notebooks modified over 90 days
+                ago.
+              </div>
+              <div class="announce green">
+                <div class="kicker">✓ Green — success</div>
+                Backup completed at 02:14 AM. 312.4 MB snapshot saved to
+                <code>/var/backups/2026-04-24.tar.gz</code>.
+              </div>
+              <div class="announce blue">
+                <div class="kicker">ℹ Blue — informational</div>
+                Scheduled maintenance window: Saturday 02:00–04:00 UTC. Read replicas will remain
+                available.
+              </div>
+              <div class="announce gray">
+                <div class="kicker">— Gray — muted</div>
+                This panel was last updated on Feb 14, 2024 and may be out of date.
+              </div>
+            </div>
+          </div>
+
+          <div class="webpart full" id="callouts">
+            <div class="webpart-header">
+              <span>💬 Callouts — <code>.callout</code></span>
+            </div>
+            <div class="webpart-body">
+              <div class="callout">
+                <div class="kicker">Note</div>
+                A yellow callout — useful inline in prose to flag a note.
+              </div>
+              <div class="callout blue">
+                <div class="kicker">Definition</div>
+                <b>Web part</b> <i>n.</i> Originally a SharePoint 2003 term for a draggable content
+                block. Now commemorated here in gradient form.
+              </div>
+              <div class="callout green">
+                <div class="kicker">Tip</div>
+                Use <kbd>Ctrl</kbd>+<kbd>K</kbd> to link to another page. Type <code>[[</code> for
+                wiki-link autocomplete.
+              </div>
+              <div class="callout red">
+                <div class="kicker">Warning</div>
+                Clicking "Reset to defaults" will discard all preferences. This cannot be undone.
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   BUTTONS                                              -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="buttons">
+            <div class="webpart-header"><span>🔘 Buttons</span></div>
+            <div class="webpart-body">
+              <h5>.btn — primary form buttons</h5>
+              <div class="flex flex-wrap mb-3">
+                <button class="btn">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-go">Go ▸</button>
+                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-ghost">Ghost</button>
+                <button class="btn" disabled>Disabled</button>
+              </div>
+
+              <h5>Sizes</h5>
+              <div class="flex flex-wrap mb-3" style="align-items: baseline">
+                <button class="btn btn-xs">Extra small</button>
+                <button class="btn btn-sm">Small</button>
+                <button class="btn">Default</button>
+              </div>
+
+              <h5>.wbtn — toolbar icon buttons</h5>
+              <div class="wysiwyg-bar mb-3">
+                <a class="wbtn" title="Bold"><b>B</b></a>
+                <a class="wbtn active" title="Italic"><i>I</i></a>
+                <a class="wbtn" title="Underline"><u>U</u></a>
+                <span class="sep"></span>
+                <a class="wbtn">H1</a>
+                <a class="wbtn">H2</a>
+                <a class="wbtn">H3</a>
+                <span class="sep"></span>
+                <a class="wbtn">•</a>
+                <a class="wbtn">1.</a>
+                <a class="wbtn">☐</a>
+                <span class="sep"></span>
+                <a class="wbtn">🔗</a>
+                <a class="wbtn">🖼</a>
+                <a class="wbtn">📎</a>
+                <span class="sep"></span>
+                <a class="wbtn">↶</a>
+                <a class="wbtn">↷</a>
+              </div>
+
+              <h5>.toolbar &amp; .tbtn</h5>
+              <div class="toolbar mb-3">
+                <a class="tbtn">✦ New</a>
+                <a class="tbtn">✎ Edit</a>
+                <a class="tbtn">🗑 Delete</a>
+                <span
+                  class="sep"
+                  style="width: 1px; height: 14px; background: var(--bp-border-hard)"
+                ></span>
+                <a class="tbtn">📤 Export</a>
+                <a class="tbtn">🖨 Print</a>
+                <span class="spacer"></span>
+                <span>View:</span>
+                <a class="tbtn">Grid</a>
+                <a class="tbtn">List</a>
+              </div>
+
+              <h5>.cbtn — inline capture buttons</h5>
+              <div class="flex flex-wrap mb-2">
+                <a class="cbtn">Save ▸</a>
+                <a class="cbtn ghost">Cancel</a>
+                <a class="cbtn">As question ❓</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   FORMS                                                -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="forms">
+            <div class="webpart-header"><span>📝 Forms</span></div>
+            <div class="webpart-body">
+              <fieldset>
+                <legend>Create New Notebook</legend>
+                <div class="form-row">
+                  <label class="req" for="nb-name">Notebook name</label>
+                  <div>
+                    <input
+                      id="nb-name"
+                      type="text"
+                      value="Research Journal Q3"
+                      style="width: 60%"
+                    />
+                    <div class="hint">Will appear in the sidebar tree. Max 80 characters.</div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="nb-desc">Description</label>
+                  <textarea id="nb-desc" placeholder="What is this notebook for?"></textarea>
+                </div>
+                <div class="form-row">
+                  <label for="nb-icon">Icon</label>
+                  <select id="nb-icon">
+                    <option>📓 Research journal</option>
+                    <option>📕 Study notes</option>
+                    <option>📗 Reading log</option>
+                    <option>📘 Meeting minutes</option>
+                    <option>📙 Language</option>
+                    <option>📔 Personal</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <label>Visibility</label>
+                  <div class="flex flex-wrap" style="align-items: baseline">
+                    <label><input type="radio" name="vis" checked /> Private</label>
+                    <label><input type="radio" name="vis" /> Shared with team</label>
+                    <label><input type="radio" name="vis" /> Public</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label>Options</label>
+                  <div>
+                    <label><input type="checkbox" checked /> Enable backlinks</label><br />
+                    <label><input type="checkbox" checked /> Track version history</label><br />
+                    <label><input type="checkbox" /> Archive reminders after 30 days</label><br />
+                    <label
+                      ><input type="checkbox" disabled /> Index for full-text search
+                      <small class="txt-faint">(requires Pro)</small></label
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="nb-quota">Quota (MB)</label>
+                  <input id="nb-quota" type="number" value="500" min="0" style="width: 80px" />
+                </div>
+                <div class="text-right">
+                  <button class="btn btn-ghost">Cancel</button>
+                  <button class="btn">Save Draft</button>
+                  <button class="btn btn-primary">Create Notebook</button>
+                </div>
+              </fieldset>
+
+              <h5 class="mt-3">Quick capture (.capture-box)</h5>
+              <div class="webpart" style="max-width: 520px">
+                <div class="webpart-header"><span>✎ Quick Capture</span></div>
+                <div class="capture-box">
+                  <textarea placeholder="Jot an idea, question, or stray thought..."></textarea>
+                  <div class="ctrls">
+                    <span>To:</span>
+                    <select>
+                      <option>📥 Inbox (default)</option>
+                      <option>📓 Research Journal Q3</option>
+                    </select>
+                    <span class="spacer"></span>
+                    <a class="cbtn ghost">As question ❓</a>
+                    <a class="cbtn">Save ▸</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   TAGS / CHIPS / LOZENGES                              -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="tags">
+            <div class="webpart-header"><span>🏷 Tags, chips &amp; lozenges</span></div>
+            <div class="webpart-body">
+              <h5>.tag — inline badges</h5>
+              <div class="mb-3" style="line-height: 2.1">
+                <span class="tag">default</span>
+                <span class="tag gold">featured</span>
+                <span class="tag green">verified</span>
+                <span class="tag red">urgent</span>
+                <span class="tag plum">archived</span>
+                <span class="tag gray">draft</span>
+              </div>
+
+              <h5>.status-lozenge</h5>
+              <div class="mb-3" style="line-height: 2.1">
+                <span class="status-lozenge open">Open</span>
+                <span class="status-lozenge pending">Pending</span>
+                <span class="status-lozenge">In review</span>
+                <span class="status-lozenge closed">Closed</span>
+                <span class="status-lozenge danger">Failed</span>
+              </div>
+
+              <h5>.prio — priority pills</h5>
+              <div class="mb-3" style="line-height: 2.1">
+                <span class="prio hi">High</span>
+                <span class="prio med">Med</span>
+                <span class="prio low">Low</span>
+              </div>
+
+              <h5>.chip — removable filters</h5>
+              <div class="mb-2">
+                <span class="chip">type: page <a class="x">×</a></span>
+                <span class="chip">tag: chemistry <a class="x">×</a></span>
+                <span class="chip">modified: last 7 days <a class="x">×</a></span>
+                <span class="chip">author: j.researcher <a class="x">×</a></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   TABLES                                               -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="tables">
+            <div class="webpart-header"><span>🗂 Tables</span></div>
+            <div class="webpart-body">
+              <h5>.corp-table — the enterprise data grid</h5>
+              <table class="corp-table mb-3">
+                <thead>
+                  <tr>
+                    <th style="width: 30px"><input type="checkbox" /></th>
+                    <th>Title</th>
+                    <th>Notebook</th>
+                    <th>Status</th>
+                    <th>Modified</th>
+                    <th>Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td><a>4.7 Addition reactions (draft)</a></td>
+                    <td>Chemistry Study Notes</td>
+                    <td><span class="status-lozenge pending">Draft</span></td>
+                    <td>6 min ago</td>
+                    <td class="text-right">12 KB</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" checked /></td>
+                    <td><a>Thesis outline — Chapter 3</a></td>
+                    <td>Thesis Draft</td>
+                    <td><span class="status-lozenge open">Open</span></td>
+                    <td>yesterday</td>
+                    <td class="text-right">48 KB</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>
+                      <a>Problem set 5 — worked solutions</a>
+                      <span class="tag red">exam-relevant</span>
+                    </td>
+                    <td>Chemistry Study Notes</td>
+                    <td><span class="status-lozenge">In review</span></td>
+                    <td>Apr 22</td>
+                    <td class="text-right">22 KB</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td><a>Q1 Review 2026</a></td>
+                    <td>Archived</td>
+                    <td><span class="status-lozenge closed">Closed</span></td>
+                    <td>Apr 15</td>
+                    <td class="text-right">86 KB</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td><a>Broken migration notes</a></td>
+                    <td>Meeting Minutes</td>
+                    <td><span class="status-lozenge danger">Failed</span></td>
+                    <td>Mar 30</td>
+                    <td class="text-right">4 KB</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td colspan="4"><b>Total: 5 items</b></td>
+                    <td class="text-right"><b>172 KB</b></td>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <h5>.activity-table — compact row ticker</h5>
+              <table class="activity-table mb-3">
+                <tr>
+                  <td class="ic">✎</td>
+                  <td class="verb">edited</td>
+                  <td class="ttl">
+                    <a>4.7 Addition reactions (draft)</a>
+                    <div class="ctx">in Chemistry Study Notes</div>
+                  </td>
+                  <td class="when">6 min</td>
+                </tr>
+                <tr>
+                  <td class="ic">✦</td>
+                  <td class="verb">created</td>
+                  <td class="ttl">
+                    <a>Open Questions — master list</a>
+                    <div class="ctx">in Chemistry Study Notes</div>
+                  </td>
+                  <td class="when">yesterday</td>
+                </tr>
+                <tr>
+                  <td class="ic">🔗</td>
+                  <td class="verb">linked</td>
+                  <td class="ttl">
+                    <a>4.5 SN1/SN2</a> → <a>3.2 Rate laws</a>
+                    <div class="ctx">internal link added</div>
+                  </td>
+                  <td class="when">yesterday</td>
+                </tr>
+                <tr>
+                  <td class="ic">📎</td>
+                  <td class="verb">attached</td>
+                  <td class="ttl">
+                    <a>sn1-vs-sn2-decision.png</a>
+                    <div class="ctx">to 4.5 SN1/SN2/E1/E2</div>
+                  </td>
+                  <td class="when">2 days</td>
+                </tr>
+                <tr>
+                  <td class="ic">🗄</td>
+                  <td class="verb">archived</td>
+                  <td class="ttl">
+                    <a>Q1 Review 2026</a>
+                    <div class="ctx">notebook closed · 14 pages</div>
+                  </td>
+                  <td class="when">Apr 15</td>
+                </tr>
+              </table>
+
+              <h5>.factsheet + .prop-table</h5>
+              <div class="factsheet" style="max-width: 400px">
+                <table class="prop-table">
+                  <tr>
+                    <td>Author</td>
+                    <td>J. Researcher</td>
+                  </tr>
+                  <tr>
+                    <td>Created</td>
+                    <td>Feb 14, 2023</td>
+                  </tr>
+                  <tr>
+                    <td>Last modified</td>
+                    <td>6 minutes ago</td>
+                  </tr>
+                  <tr>
+                    <td>Version</td>
+                    <td>v.1.34 <small class="txt-faint">(auto-saved)</small></td>
+                  </tr>
+                  <tr>
+                    <td>Word count</td>
+                    <td>4,872</td>
+                  </tr>
+                  <tr>
+                    <td>Links in</td>
+                    <td>12 pages</td>
+                  </tr>
+                  <tr>
+                    <td>Links out</td>
+                    <td>8 pages</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   LISTS                                                -->
+          <!-- ===================================================== -->
+          <div class="webpart" id="lists">
+            <div class="webpart-header"><span>📋 .nav-list &amp; .tree-list</span></div>
+            <div class="webpart-body flush">
+              <ul class="nav-list">
+                <li class="section">Workspace</li>
+                <li><a class="current">Dashboard</a></li>
+                <li><a>Notebooks</a></li>
+                <li><a>Search</a></li>
+                <li class="section">Notebooks</li>
+                <li><a>📓 Research Journal Q2</a></li>
+                <li><a>📕 Chemistry Study Notes</a></li>
+                <li><a>📘 Meeting Minutes</a></li>
+              </ul>
+              <hr class="rule" />
+              <ul class="tree-list">
+                <li><a>Module 1 — Atomic structure</a></li>
+                <li class="indent-1"><a>1.1 Wave-particle duality</a></li>
+                <li class="indent-1"><a>1.2 Schrödinger</a></li>
+                <li class="indent-2"><a>1.2.1 Orbitals</a></li>
+                <li class="indent-2"><a>1.2.2 Quantum numbers</a></li>
+                <li><a>Module 2 — Bonding</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="webpart wp-green">
+            <div class="webpart-header"><span>✓ .task-list</span></div>
+            <ul class="task-list">
+              <li>
+                <span class="chk"></span><a>Finish draft of 4.7 Addition reactions</a
+                ><span class="prio hi">HIGH</span>
+              </li>
+              <li>
+                <span class="chk"></span><a>Review Modules 1–3 for final</a
+                ><span class="prio hi">HIGH</span>
+              </li>
+              <li>
+                <span class="chk"></span><a>Problem set 5 (due Apr 28)</a
+                ><span class="prio med">MED</span>
+              </li>
+              <li class="done">
+                <span class="chk done"></span><span>Read Clayden Ch. 15</span
+                ><span class="prio low">LOW</span>
+              </li>
+              <li class="done">
+                <span class="chk done"></span><span>Update periodic-table-annotated.png</span
+                ><span class="prio low">LOW</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>🗓 .event-list</span></div>
+            <ul class="event-list">
+              <li><span class="date">TODAY</span><a>Mid-week review</a> — 4 PM</li>
+              <li><span class="date">APR 28</span><a>Problem set 5 due</a></li>
+              <li><span class="date urgent">MAY 12</span><b>CHEM 202 Final Exam</b> — 9:00 AM</li>
+              <li>
+                <span class="date urgent">MAY 15</span>Planned: <i>archive Chemistry notebook</i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="webpart wp-red">
+            <div class="webpart-header"><span>❓ .q-list — open questions</span></div>
+            <ul class="q-list">
+              <li>
+                <span class="qic">?</span>
+                <div>
+                  <a>Why does Zeff not monotonically increase down a group?</a>
+                  <div class="q-src">Chemistry › Module 1 › 1.3 · ask Prof. K</div>
+                </div>
+                <span class="age">12 days</span>
+              </li>
+              <li>
+                <span class="qic">?</span>
+                <div>
+                  <a>ΔG cutoff where SN1 becomes viable for 1° center?</a>
+                  <div class="q-src">Chemistry › Module 4 › 4.5</div>
+                </div>
+                <span class="age">today</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   CALENDAR                                             -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="calendar">
+            <div class="webpart-header">
+              <span>📅 Calendar — <code>.cal-head</code> / <code>.cal-table</code></span>
+            </div>
+            <div class="webpart-body flush">
+              <div class="cal-head">
+                <span>◀ April 2026 ▶</span>
+                <span><a>Today</a> · <a>Month</a></span>
+              </div>
+              <table class="cal-table">
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+                <tr>
+                  <td class="off">29</td>
+                  <td class="off">30</td>
+                  <td class="off">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td class="event" title="Lab report due">15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td class="today">24</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td class="event">28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="off">1</td>
+                  <td class="off deadline" style="color: #8a0000; font-weight: bold">2</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   USAGE BARS & PROGRESS                                -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="bars">
+            <div class="webpart-header"><span>📊 Usage bars &amp; progress</span></div>
+            <div class="webpart-body">
+              <h5>.usage-table — sparkline rows</h5>
+              <table class="usage-table mb-3">
+                <tr>
+                  <td>Mon</td>
+                  <td class="bar-cell"><span class="bar" style="width: 30%"></span></td>
+                  <td class="n">412</td>
+                </tr>
+                <tr>
+                  <td>Tue</td>
+                  <td class="bar-cell"><span class="bar" style="width: 55%"></span></td>
+                  <td class="n">743</td>
+                </tr>
+                <tr>
+                  <td>Wed</td>
+                  <td class="bar-cell"><span class="bar gold" style="width: 80%"></span></td>
+                  <td class="n">1,082</td>
+                </tr>
+                <tr>
+                  <td>Thu</td>
+                  <td class="bar-cell"><span class="bar green" style="width: 62%"></span></td>
+                  <td class="n">834</td>
+                </tr>
+                <tr>
+                  <td>Fri</td>
+                  <td class="bar-cell"><span class="bar red" style="width: 45%"></span></td>
+                  <td class="n">605</td>
+                </tr>
+                <tr>
+                  <td>Sat</td>
+                  <td class="bar-cell"><span class="bar gray" style="width: 18%"></span></td>
+                  <td class="n">244</td>
+                </tr>
+                <tr>
+                  <td><b>Sun</b></td>
+                  <td class="bar-cell"><span class="bar" style="width: 70%"></span></td>
+                  <td class="n"><b>952</b></td>
+                </tr>
+              </table>
+
+              <h5>.progress — inset bar</h5>
+              <div class="stack-sm" style="max-width: 420px">
+                <div>
+                  Disk quota — 312 of 2048 MB
+                  <div class="progress"><span style="width: 15%"></span></div>
+                </div>
+                <div>
+                  Study progress — Module 4
+                  <div class="progress"><span style="width: 72%"></span></div>
+                </div>
+                <div>
+                  Download — notebook.zip
+                  <div class="progress">
+                    <span
+                      style="
+                        width: 100%;
+                        background: linear-gradient(to bottom, #b8d890, #5a8a3a);
+                        border-color: #3a5a10;
+                      "
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   SHELF CARDS                                          -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="shelf">
+            <div class="webpart-header">
+              <span>📚 Shelf cards — <code>.shelf-grid</code></span>
+            </div>
+            <div class="shelf-grid">
+              <div class="shelf-card">
+                <span class="recent-dot" title="edited today"></span>
+                <span class="ic">📕</span>
+                <div class="t">Chemistry Study Notes</div>
+                <div class="meta">42 pages · 8 imgs<br />mod. today 09:41</div>
+              </div>
+              <div class="shelf-card">
+                <span class="recent-dot"></span>
+                <span class="ic">📓</span>
+                <div class="t">Research Journal Q2</div>
+                <div class="meta">23 pages · 0 imgs<br />mod. today 08:55</div>
+              </div>
+              <div class="shelf-card">
+                <span class="ic">📗</span>
+                <div class="t">Reading Log 2026</div>
+                <div class="meta">31 pages · 6 imgs<br />mod. yesterday</div>
+              </div>
+              <div class="shelf-card archived">
+                <span class="ic">📘</span>
+                <div class="t">Q1 Review 2026</div>
+                <div class="meta">18 pages · archived</div>
+              </div>
+              <div class="shelf-card">
+                <span class="ic">📒</span>
+                <div class="t">Thesis Draft</div>
+                <div class="meta">64 pages · 0 imgs</div>
+              </div>
+              <div class="shelf-card">
+                <span class="ic">📔</span>
+                <div class="t">Personal Reflections</div>
+                <div class="meta">112 pages · 0 imgs</div>
+              </div>
+              <div class="shelf-card">
+                <span class="ic">📙</span>
+                <div class="t">Language Learning (DE)</div>
+                <div class="meta">9 pages · 0 imgs</div>
+              </div>
+              <div class="shelf-card dashed">
+                <span class="ic" style="opacity: 0.4">➕</span>
+                <div class="t" style="color: #666">Start a new notebook...</div>
+                <div class="meta" style="color: #999">click to create</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   EDITOR BLOCKS                                        -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="editor">
+            <div class="webpart-header"><span>✎ Editor content blocks</span></div>
+            <div class="webpart-body">
+              <h5>.wikilink</h5>
+              <p>
+                Inline cross-references like <a class="wikilink">4.5 SN1/SN2</a> and
+                <a class="wikilink">Rate laws</a> look like this. A page that doesn't exist yet
+                shows as <a class="wikilink broken">future page</a>.
+              </p>
+
+              <h5>.formula-block</h5>
+              <div class="formula-block">
+                <span class="label">Gibbs free energy</span>
+                ΔG° = −RT ln K = ΔH° − TΔS°
+              </div>
+
+              <h5>.rxn — monospace reaction / ASCII diagram</h5>
+              <div class="rxn">
+                CH3 CH3 | | H - C - Br → H - C+ + Br⁻ (rate-determining step, SN1) | | CH3 CH3
+              </div>
+
+              <h5>.attachment</h5>
+              <div class="flex flex-wrap" style="align-items: flex-start">
+                <div class="attachment">
+                  <div
+                    style="
+                      width: 160px;
+                      height: 100px;
+                      background: repeating-linear-gradient(45deg, #e8eef7 0 6px, #c8d4e8 6px 12px);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: var(--bp-navy-ink);
+                      font-weight: bold;
+                    "
+                  >
+                    [ image ]
+                  </div>
+                  <span class="filename">sn1-vs-sn2-decision.png</span>
+                  267 KB · 2 days ago
+                </div>
+                <div class="attachment">
+                  <div
+                    style="
+                      width: 160px;
+                      height: 100px;
+                      background: repeating-linear-gradient(45deg, #fff5d4 0 6px, #f4d98a 6px 12px);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: var(--bp-gold-ink);
+                      font-weight: bold;
+                    "
+                  >
+                    [ chart ]
+                  </div>
+                  <span class="filename">arrhenius-plot.png</span>
+                  221 KB · Mar 14
+                </div>
+              </div>
+
+              <h5 class="mt-3">.comment — threaded inline comments</h5>
+              <div class="comment">
+                <span class="who">J. Researcher</span> <span class="when">· 2 days ago</span><br />
+                Should this section cite Clayden Ch. 15 or the primary Bordwell paper?
+              </div>
+              <div class="comment" style="margin-left: 20px">
+                <span class="who">Prof. K</span> <span class="when">· yesterday</span><br />
+                Primary source is better — Bordwell is canonical for pKa discussions. Clayden is
+                downstream.
+              </div>
+
+              <h5 class="mt-3">.vhist — version history</h5>
+              <div>
+                <div class="vhist">
+                  <span class="v">v1.34</span><span class="when">09:41 today</span
+                  ><span class="who">J. Researcher · auto-save</span><a>Diff</a>
+                </div>
+                <div class="vhist">
+                  <span class="v">v1.33</span><span class="when">09:15 today</span
+                  ><span class="who">J. Researcher · manual</span><a>Diff</a>
+                </div>
+                <div class="vhist">
+                  <span class="v">v1.32</span><span class="when">yesterday</span
+                  ><span class="who">J. Researcher</span><a>Diff</a>
+                </div>
+                <div class="vhist">
+                  <span class="v">v1.31</span><span class="when">Apr 21</span
+                  ><span class="who">Prof. K · comment</span><a>Diff</a>
+                </div>
+              </div>
+
+              <h5 class="mt-3">Backlinks</h5>
+              <div>
+                <div class="backlink-item">
+                  <a>4.5 SN1/SN2 mechanism summary</a>
+                  <span class="ctx"
+                    >"...see also
+                    <mark class="hl">the full discussion at 4.7 Addition reactions</mark> for
+                    context..."</span
+                  >
+                </div>
+                <div class="backlink-item">
+                  <a>Study plan — Final exam</a>
+                  <span class="ctx"
+                    >"review <mark class="hl">Module 4 Addition reactions</mark> Tuesday
+                    evening..."</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   SEARCH & FACETS                                      -->
+          <!-- ===================================================== -->
+          <div class="full" id="search">
+            <div class="section-heading">Search patterns</div>
+          </div>
+          <div class="webpart full">
+            <div class="search-hero">
+              <div class="search-bar">
+                <input
+                  type="search"
+                  placeholder="Search notebooks, pages, attachments..."
+                  value="SN1 mechanism"
+                />
+                <button>Search ▸</button>
+              </div>
+              <div class="search-opts">
+                <label><input type="checkbox" checked /> Page titles</label> &nbsp;
+                <label><input type="checkbox" checked /> Page body</label> &nbsp;
+                <label><input type="checkbox" /> Attachments (OCR)</label> &nbsp;
+                <label><input type="checkbox" /> Comments</label> &nbsp;
+                <label><input type="checkbox" /> Archived notebooks</label>
+              </div>
+            </div>
+
+            <div class="webpart-body">
+              <div class="active-filters">
+                Filters:
+                <span class="chip">type: page <a class="x">×</a></span>
+                <span class="chip">modified: last 30 days <a class="x">×</a></span>
+                <a class="fs-sm">Clear all</a>
+              </div>
+
+              <div class="results-meta">
+                About <b>14 results</b> · searched 1,346 pages · took 0.12s
+              </div>
+              <div class="did-you-mean">Did you mean: <a>SN2 mechanism</a>?</div>
+
+              <div class="result featured">
+                <div class="title">★ <a>4.5 SN1/SN2/E1/E2 — decision flowchart</a></div>
+                <div class="snippet">
+                  The <mark>SN1 mechanism</mark> proceeds via a carbocation intermediate. Rate is
+                  <b>first-order</b> in substrate, <b>zeroth-order</b> in nucleophile. Favoured by:
+                  3° centres, polar protic solvents, weak nucleophiles...
+                </div>
+                <div class="meta">
+                  Chemistry Study Notes › Module 4 › 4.5 · 42 backlinks · modified 6 min ago
+                </div>
+              </div>
+
+              <div class="result">
+                <div class="title"><a>3.2 Rate laws &amp; the rate-determining step</a></div>
+                <div class="snippet">
+                  ...for an <mark>SN1 mechanism</mark> the rate law reduces to Rate = k[RX]. The
+                  nucleophile concentration does not appear because...
+                </div>
+                <div class="meta">
+                  Chemistry Study Notes › Module 3 › 3.2 · 18 backlinks · modified Apr 20
+                </div>
+              </div>
+
+              <div class="result">
+                <div class="title"><a>Problem set 5 — worked solutions</a></div>
+                <div class="snippet">
+                  Q3: Classify each as SN1, <mark>SN1</mark> with rearrangement, or SN2.
+                  <i>(a)</i> 2-bromo-2-methylpropane + water → <mark>SN1</mark>...
+                </div>
+                <div class="meta">Chemistry Study Notes · 5 backlinks · modified Apr 22</div>
+              </div>
+
+              <div class="result">
+                <div class="title"><a>Open Questions — master list</a></div>
+                <div class="snippet">
+                  11. <mark>SN1</mark>: Why does ΔG cutoff matter specifically for 1° centres?
+                  <i>ask Prof. K</i>
+                </div>
+                <div class="meta">Chemistry Study Notes · 0 backlinks · created yesterday</div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination" id="pagination">
+                <span class="disabled">‹ Prev</span>
+                <span class="current">1</span>
+                <a>2</a>
+                <a>3</a>
+                <span>...</span>
+                <a>14</a>
+                <a>Next ›</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   DIALOG                                               -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="dialog">
+            <div class="webpart-header"><span>🪟 Dialog</span></div>
+            <div class="webpart-body">
+              <div class="dialog" style="margin: 0 auto">
+                <div class="dialog-head">
+                  <span>Confirm archive</span>
+                  <a class="x">×</a>
+                </div>
+                <div class="dialog-body">
+                  Are you sure you want to archive <b>📘 Meeting Minutes</b>? It contains
+                  <b>18 pages</b>, 2 attachments, and hasn't been edited in 23 days. Archived
+                  notebooks can be restored within 90 days.
+                </div>
+                <div class="dialog-foot">
+                  <button class="btn btn-ghost">Cancel</button>
+                  <button class="btn">Snooze 7 days</button>
+                  <button class="btn btn-primary">Archive</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   TOOLTIPS                                             -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="tooltip">
+            <div class="webpart-header"><span>💬 Tooltips &amp; helpers</span></div>
+            <div class="webpart-body">
+              <p>
+                Hover over a term with <code>data-tip</code>: this
+                <span data-tip="Valence-Shell Electron-Pair Repulsion">VSEPR</span> acronym reveals
+                its expansion. Works for any element:
+                <b data-tip="Substitution Nucleophilic Unimolecular">SN1</b>,
+                <b data-tip="As of April 24, 2026">today</b>,
+                <b data-tip="J. Researcher · 09:41 · automatic">auto-saved</b>.
+              </p>
+              <p>
+                You can pair tooltips with the <code>.recent-dot</code>
+                <span class="recent-dot"></span> or an arrow
+                <span class="arrow-sep"></span> separator.
+              </p>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--   UTILITY CLASSES                                      -->
+          <!-- ===================================================== -->
+          <div class="webpart full" id="utility">
+            <div class="webpart-header"><span>🧰 Utility classes</span></div>
+            <div class="webpart-body">
+              <h5>Text colour</h5>
+              <p>
+                <span class="txt-navy">navy</span> &nbsp; <span class="txt-gold">gold</span> &nbsp;
+                <span class="txt-green">green</span> &nbsp; <span class="txt-red">red</span> &nbsp;
+                <span class="txt-muted">muted</span> &nbsp; <span class="txt-dim">dim</span> &nbsp;
+                <span class="txt-faint">faint</span>
+              </p>
+
+              <h5>Background</h5>
+              <div class="grid-4 mb-2">
+                <div class="bg-tan px-2 py-1">.bg-tan</div>
+                <div class="bg-cream px-2 py-1">.bg-cream</div>
+                <div class="bg-sunk px-2 py-1">.bg-sunk</div>
+                <div class="bg-yell px-2 py-1">.bg-yell</div>
+                <div class="bg-green px-2 py-1">.bg-green</div>
+                <div class="bg-red px-2 py-1">.bg-red</div>
+                <div class="bg-navy px-2 py-1">.bg-navy</div>
+                <div class="bg-paper px-2 py-1" style="border: 1px solid var(--bp-border-soft)">
+                  .bg-paper
+                </div>
+              </div>
+
+              <h5>Font size</h5>
+              <p>
+                <span class="fs-xs">xs 9px</span> · <span class="fs-sm">sm 10px</span> ·
+                <span>base 11px</span> · <span class="fs-md">md 12px</span> ·
+                <span class="fs-lg">lg 14px</span> ·
+                <span class="fs-xl">xl 16px</span>
+              </p>
+
+              <h5>Font family</h5>
+              <p class="ff-mono">.ff-mono — Courier New 11</p>
+              <p class="ff-serif">.ff-serif — Georgia 11</p>
+              <p class="ff-head">.ff-head — Trebuchet MS 11</p>
+
+              <h5>Layout</h5>
+              <div class="flex-between bg-cream px-2 py-1 mb-1">
+                <span>.flex-between container</span>
+                <span><a class="tbtn">Action ▸</a></span>
+              </div>
+              <div class="grid-3 mb-2">
+                <div class="bg-tan px-2 py-1 text-center">grid col 1</div>
+                <div class="bg-tan px-2 py-1 text-center">grid col 2</div>
+                <div class="bg-tan px-2 py-1 text-center">grid col 3</div>
+              </div>
+
+              <h5>Full class list</h5>
+              <table class="corp-table" style="font-size: 10px">
+                <thead>
+                  <tr>
+                    <th>Class</th>
+                    <th>Use</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <code
+                        >.txt-navy / .txt-gold / .txt-green / .txt-red / .txt-muted / .txt-dim /
+                        .txt-faint</code
+                      >
+                    </td>
+                    <td>Text colour helpers</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code
+                        >.bg-paper / .bg-tan / .bg-cream / .bg-sunk / .bg-yell / .bg-green / .bg-red
+                        / .bg-navy</code
+                      >
+                    </td>
+                    <td>Background helpers</td>
+                  </tr>
+                  <tr>
+                    <td><code>.fs-xs / .fs-sm / .fs-md / .fs-lg / .fs-xl</code></td>
+                    <td>Font-size scale</td>
+                  </tr>
+                  <tr>
+                    <td><code>.ff-mono / .ff-serif / .ff-head</code></td>
+                    <td>Font-family</td>
+                  </tr>
+                  <tr>
+                    <td><code>.bold / .italic / .upper</code></td>
+                    <td>Weight &amp; emphasis</td>
+                  </tr>
+                  <tr>
+                    <td><code>.text-left / .text-right / .text-center</code></td>
+                    <td>Alignment</td>
+                  </tr>
+                  <tr>
+                    <td><code>.m-0 / .mt-* / .mb-* / .pt-* / .pb-* / .px-* / .py-*</code></td>
+                    <td>Spacing (0, 1=4px, 2=8px, 3=12px)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code
+                        >.flex / .flex-between / .flex-center / .flex-wrap / .flex-1 / .spacer</code
+                      >
+                    </td>
+                    <td>Flex layout</td>
+                  </tr>
+                  <tr>
+                    <td><code>.grid / .grid-2 / .grid-3 / .grid-4</code></td>
+                    <td>Grid layout</td>
+                  </tr>
+                  <tr>
+                    <td><code>.hidden / .visually-hidden / .inline-block / .block</code></td>
+                    <td>Display</td>
+                  </tr>
+                  <tr>
+                    <td><code>.rule</code></td>
+                    <td>Dotted horizontal divider</td>
+                  </tr>
+                  <tr>
+                    <td><code>.recent-dot</code></td>
+                    <td>Red "recent" dot marker</td>
+                  </tr>
+                  <tr>
+                    <td><code>.arrow-sep</code></td>
+                    <td>▸ separator character</td>
+                  </tr>
+                  <tr>
+                    <td><code>.mark-row</code></td>
+                    <td>Yellow "you are here" highlight for rows</td>
+                  </tr>
+                  <tr>
+                    <td><code>.num / .display-num</code></td>
+                    <td>Serif big-number style</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+       RIGHT COLUMN
+       ========================================================= -->
+        <div class="right-col">
+          <div class="webpart">
+            <div class="webpart-header"><span>🌤 Today</span></div>
+            <div class="webpart-body fs-sm" style="line-height: 1.7">
+              <b>Friday, April 24, 2026</b><br />
+              Stockholm · 12°C, overcast<br />
+              Sunrise 05:08 · Sunset 20:41<br />
+              Day 114 of 365<br />
+              <hr class="rule" />
+              <b class="txt-navy">Week 17 of 2026</b><br />
+              Q2 day 24 of 91
+            </div>
+          </div>
+
+          <div class="webpart wp-green">
+            <div class="webpart-header"><span>🔥 Streak</span></div>
+            <div class="webpart-body text-center" style="padding: 10px">
+              <div
+                class="ff-serif"
+                style="
+                  font-size: var(--bp-fs-giant);
+                  font-weight: bold;
+                  color: var(--bp-green-ink);
+                  line-height: 1;
+                "
+              >
+                16
+              </div>
+              <div class="fs-sm txt-muted upper" style="margin-top: 3px">consecutive days</div>
+              <div class="fs-sm txt-green mt-1"><b>Personal best:</b> 23 days</div>
+              <div class="fs-sm mt-1"><a>View history</a></div>
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>🗄 Archive Prompt</span></div>
+            <div class="webpart-body fs-sm">
+              <div class="fs-sm txt-faint mb-1">System suggests:</div>
+              <p class="mb-2">
+                <b>📘 Meeting Minutes</b> hasn't been edited in <b>23 days</b>. Archive?
+              </p>
+              <div class="text-right">
+                <a class="btn btn-xs">Archive</a>
+                <a class="btn btn-xs">Keep</a>
+                <a class="btn btn-xs">Snooze</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="webpart wp-gold">
+            <div class="webpart-header"><span>🔖 Featured component</span></div>
+            <div class="webpart-body fs-sm">
+              <p>
+                <b>Stat grid</b> is the fastest way to add a KPI dashboard. Drop four numbers in and
+                you're done.
+              </p>
+              <p class="text-right"><a href="#stats">See example ▸</a></p>
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>📥 Inbox (3)</span></div>
+            <div class="webpart-body flush">
+              <ul style="list-style: none; margin: 0; padding: 0; font-size: var(--bp-fs-sm)">
+                <li
+                  class="px-2 py-1 bg-yell"
+                  style="border-bottom: 1px dotted var(--bp-border-dot)"
+                >
+                  <b>Quick thought</b> · 8:42 AM<br />
+                  <span class="txt-muted"
+                    >"Check: is Gibbs really ΔG = −RT ln K at all temperatures?..."</span
+                  >
+                </li>
+                <li
+                  class="px-2 py-1 bg-yell"
+                  style="border-bottom: 1px dotted var(--bp-border-dot)"
+                >
+                  <b>❓ Question</b> · yesterday<br />
+                  <span class="txt-muted">"Why did Faraday use..."</span>
+                </li>
+                <li class="px-2 py-1 bg-yell">
+                  <b>Thought</b> · Apr 20<br />
+                  <span class="txt-muted">"The book on attention — marginalia p.12..."</span>
+                </li>
+              </ul>
+              <div class="px-2 py-1 text-right bg-tan" style="border-top: 1px solid #c8c4b4">
+                <a class="fs-sm">Process inbox →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>🔧 Quick Actions</span></div>
+            <div class="webpart-body" style="line-height: 1.9">
+              <a>📝 New page</a><br />
+              <a>📓 New notebook</a><br />
+              <a>📎 Upload attachment</a><br />
+              <a>🔍 Full-text search</a><br />
+              <a>📤 Export notebook</a><br />
+              <a>💾 Run backup now</a><br />
+              <a>⚙ Preferences</a>
+            </div>
+          </div>
+
+          <div class="webpart">
+            <div class="webpart-header"><span>🔍 Did You Know?</span></div>
+            <div class="webpart-body fs-sm">
+              This stylesheet's default body font size is <b>11 pixels</b>. That was the de-facto
+              standard for every shipping MS Office product from 2000 to 2007 — small by modern
+              standards but true to the era.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.layout -->
+    </div>
+    <!-- /.wrap -->
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <div class="footer" id="footer">
+      <div>
+        &copy; 2026 tahoma.css &nbsp;|&nbsp; v1.0.0 (build 20260424) &nbsp;|&nbsp;
+        <a>Terms of Use</a> &nbsp;|&nbsp; <a>Privacy Policy</a> &nbsp;|&nbsp;
+        <a>Accessibility</a> &nbsp;|&nbsp; <a>Report an Issue</a>
+      </div>
+      <div>
+        Stylesheet: style.css &nbsp;|&nbsp; Encoding: UTF-8 &nbsp;|&nbsp; ✓ Best viewed in Internet
+        Explorer 6.0+
+      </div>
+    </div>
+  </body>
+</html>
